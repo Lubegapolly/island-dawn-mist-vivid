@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8080/patients/pt_okello/visit",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "DiabCare MRRH",
+      "hasCanvas": false,
+      "bodyTextLen": 5643,
+      "bodyTextHash": "db1ab207b421bfe8e410b54b28b2ab79637662c1eaa65818f7d211847f7b63c0",
+      "bodyTextPrefix": "DiabCare Mbarara Regional Referral Hospital DIABETES CLINIC Toda",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/visit-smoke.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "DiabCare MRRH",
+      "hasCanvas": false,
+      "bodyTextLen": 5585,
+      "bodyTextHash": "fec3e4c4489a880a786a9598bff480c2329663de32587d8f48063923ee129017",
+      "bodyTextPrefix": "DiabCare Mbarara RRH · Diabetes clinic ENCOUNTER James Okello MR",
+      "horizontalOverflow": false,
+      "consoleErrors": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\n%s%s https://react.dev/link/hydration-mismatch \n\n  ...\n    <CatchBoundary getResetKey={function getResetKey} errorComponent={function AppErrorComponent} ...>\n      <SafeFragment fallback={function fallback}>\n        <MatchInnerImpl match={{id:\"/patie...\", ...}}>\n          <Lazy>\n            <VisitPage>\n              <div className=\"px-4 py-6 ...\">\n                <p>\n                <h1>\n                <p>\n                <div className=\"mt-6 grid ...\">\n                  <form className=\"space-y-5\" onSubmit={function onSubmit}>\n                    <Card title=\"Visit\">\n                      <section className=\"rounded-[v...\">\n                        <h2>\n                        <div className=\"mt-4\">\n                          <div className=\"grid gap-4...\">\n                            <Field>\n                            <Field label=\"Clinician\">\n                              <div className=\"space-y-1.5\">\n                                <Label>\n                                <NativeSelect value=\"Dr. Atwine\" onChange={function onChange}>\n                                  <select\n+                                   className=\"h-11 w-full appearance-auto rounded-[var(--radius-sm)] bg-surface px-3 ...\"\n-                                   className=\"h-11 w-full rounded-[var(--radius-sm)] bg-surface px-3 text-sm text-ink...\"\n+                                   size={1}\n-                                   size={null}\n                                    value=\"Dr. Atwine\"\n                                    onChange={function onChange}\n                                  >\n                            <Field label=\"Working di...\">\n                              <div className=\"space-y-1.5\">\n                                <Label>\n                                <NativeSelect value=\"t2dm\" onChange={function onChange}>\n                                  <select\n+                                   className=\"h-11 w-full appearance-auto rounded-[var(--radius-sm)] bg-surface px-3 ...\"\n-                                   className=\"h-11 w-full rounded-[var(--radius-sm)] bg-surface px-3 text-sm text-ink...\"\n+                                   size={1}\n-                                   size={null}\n                                    value=\"t2dm\"\n                                    onChange={function onChange}\n                                  >\n                    <Card>\n                    <Card title=\"Glucose\">\n                      <section className=\"rounded-[v...\">\n                        <h2>\n                        <div className=\"mt-4\">\n                          <div>\n                          <div className=\"mt-4 grid ...\">\n                            <Field label=\"Hypoglycaemia\">\n                              <div className=\"space-y-1.5\">\n                                <Label>\n                                <NativeSelect value=\"none\" onChange={function onChange}>\n                                  <select\n+                                   className=\"h-11 w-full appearance-auto rounded-[var(--radius-sm)] bg-surface px-3 ...\"\n-                                   className=\"h-11 w-full rounded-[var(--radius-sm)] bg-surface px-3 text-sm text-ink...\"\n+                                   size={1}\n-                                   size={null}\n                                    value=\"none\"\n                                    onChange={function onChange}\n                                  >\n                            <Field label=\"Foot exam\">\n                              <div className=\"space-y-1.5\">\n                                <Label>\n                                <NativeSelect value=\"deferred\" onChange={function onChange}>\n                                  <select\n+                                   className=\"h-11 w-full appearance-auto rounded-[var(--radius-sm)] bg-surface px-3 ...\"\n-                                   className=\"h-11 w-full rounded-[var(--radius-sm)] bg-surface px-3 text-sm text-ink...\"\n+                                   size={1}\n-                                   size={null}\n                                    value=\"deferred\"\n                                    onChange={function onChange}\n                                  >\n                          ...\n                    ...\n                  ...\n"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/visit-smoke-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/visit-smoke.json"
+}

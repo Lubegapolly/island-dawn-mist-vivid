@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "DiabCare MRRH",
+      "hasCanvas": false,
+      "bodyTextLen": 1237,
+      "bodyTextHash": "c0abdc52894cacfb715e859cef80e1ebf640de77959a3c6d84fbb9ac1dd730a0",
+      "bodyTextPrefix": "DiabCare Mbarara Regional Referral Hospital DIABETES CLINIC Toda",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "DiabCare MRRH",
+      "hasCanvas": false,
+      "bodyTextLen": 1179,
+      "bodyTextHash": "7eec4cfed03be51a34c9e8cb8482db539909c33ce5e6b4e17ae430c5d9c418bb",
+      "bodyTextPrefix": "DiabCare Mbarara RRH · Diabetes clinic OUTPATIENT SESSION Today’",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
