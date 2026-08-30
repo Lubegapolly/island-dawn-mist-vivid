@@ -1,10 +1,8 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import type { Patient, QueueStage, Visit } from "./types";
-import { makeSeed, SEED_VERSION } from "./seed";
+import { SEED_VERSION } from "./seed";
 import { todayIso } from "./format";
-
-const boot = makeSeed(new Date());
 
 type ClinicState = {
   seedVersion: number;
@@ -24,26 +22,17 @@ export const useClinicStore = create<ClinicState>()(
   persist(
     (set, get) => ({
       seedVersion: SEED_VERSION,
-      patients: boot.patients,
-      visits: boot.visits,
+      patients: [],
+      visits: [],
       hasHydrated: false,
       setHasHydrated: (v) => set({ hasHydrated: v }),
       seedIfEmpty: () => {
-        const { patients, seedVersion } = get();
-        if (patients.length === 0 || seedVersion !== SEED_VERSION) {
-          const seed = makeSeed(new Date());
-          set({
-            patients: seed.patients,
-            visits: seed.visits,
-            seedVersion: SEED_VERSION,
-          });
-        }
+        // no-op — start empty
       },
       resetDemo: () => {
-        const seed = makeSeed(new Date());
         set({
-          patients: seed.patients,
-          visits: seed.visits,
+          patients: [],
+          visits: [],
           seedVersion: SEED_VERSION,
         });
       },
