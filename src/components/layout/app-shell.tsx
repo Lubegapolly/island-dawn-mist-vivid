@@ -4,12 +4,10 @@ import {
   BookOpen,
   CalendarClock,
   LayoutGrid,
-  RotateCcw,
   Users,
 } from "lucide-react";
 import { format } from "date-fns";
 import { Mark } from "@/components/mark";
-import { Button } from "@/components/ui/button";
 import { useClinicStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -22,7 +20,6 @@ const NAV = [
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const resetDemo = useClinicStore((s) => s.resetDemo);
 
   useEffect(() => {
     const finish = () => {
@@ -80,15 +77,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <p className="font-mono text-xs tabular-nums text-primary-fg/60">
               {format(new Date(), "EEEE d MMM yyyy")}
             </p>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="h-9 w-full justify-start text-primary-fg/70 hover:bg-primary-fg/10 hover:text-primary-fg"
-              onClick={() => resetDemo()}
-            >
-              <RotateCcw className="size-3.5" />
-              Reset demo data
-            </Button>
           </div>
         </aside>
 
