@@ -22,7 +22,6 @@ import type {
   Visit,
   VisitDraft,
 } from "@/lib/types";
-import { CLINICIANS } from "@/lib/types";
 
 export const Route = createFileRoute("/patients_/$patientId_/visit")({
   component: VisitPage,
@@ -187,14 +186,12 @@ function VisitPage() {
                 <Input type="date" value={live.date} onChange={(e) => set("date", e.target.value)} />
               </Field>
               <Field label="Clinician">
-                <NativeSelect
+                <Input
                   value={live.clinician}
                   onChange={(e) => set("clinician", e.target.value)}
-                >
-                  {CLINICIANS.map((c) => (
-                    <option key={c}>{c}</option>
-                  ))}
-                </NativeSelect>
+                  placeholder="Your name"
+                  required
+                />
               </Field>
               <Field label="Working diagnosis">
                 <NativeSelect
@@ -490,7 +487,7 @@ function n(v: string) {
 function patientToDraft(patient: NonNullable<ReturnType<typeof usePatient>>): VisitDraft {
   return {
     date: todayIso(),
-    clinician: CLINICIANS[0],
+    clinician: "",
     weightKg: patient.weightKg != null ? String(patient.weightKg) : "",
     heightCm: patient.heightCm != null ? String(patient.heightCm) : "",
     sbp: "",
